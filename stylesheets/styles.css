@@ -43,3 +43,4 @@ h1, h2 {font-size:16px;font-weight:normal;color:#ccc;}
   body.identity #content #preview {float:left;}
   body.identity #content #preview a {background:url(../images/preview.gif) no-repeat; display:block;margin:20px 0 0 90px;padding-left:20px;}
   body.identity #content #description {text-align:left;padding:0 0 0 346px; width:400px;}
+  body.identity #preview-images {display:none;}
