@@ -4,6 +4,11 @@
     <title>Dream Editions Press</title>
     <link rel="stylesheet" href="stylesheets/reset.css" type="text/css" media="screen" charset="utf-8" />
     <link rel="stylesheet" href="stylesheets/styles.css" type="text/css" media="screen" charset="utf-8" />
+    
+    <script src="javascripts/fadeshow.js" type="text/javascript"></script>
+    <script>
+      function randOrd(){return (Math.round(Math.random())-0.5); }
+    </script>
   </head>
   <body class="home">
     <div id="container">
@@ -17,7 +22,17 @@
         </ul>
       </div>
       <div id="content">
-        <div class="media_bin"><img src="images/home_1.jpg" width="710" border="0" height="499"/></div>
+        <div class="media_bin">
+          <script>
+          var fadeimages=new Array();var fadebgcolor="black";
+          fadeimages[fadeimages.length]=["images/home/1.jpg", "", ""];
+          fadeimages[fadeimages.length]=["images/home/2.jpg", "", ""];
+          fadeimages[fadeimages.length]=["images/home/3.jpg", "", ""];
+          fadeimages[fadeimages.length]=["images/home/4.jpg", "", ""];
+          fadeimages.sort(randOrd);
+          new fadeshow(fadeimages, 710, 499, 0, 3000, 1);
+          </script>
+        </div>
         <div class="preorder"><a href="identity.html" title="Pre-Order!"><img alt="Pre-Order!" src="images/preorder.gif" border="0" width="250" height="499" /></a></div>
       </div>
       <div id="footer">&copy; Copyright 2010. Dream Editions Press. All Rights Reserved.</div>
