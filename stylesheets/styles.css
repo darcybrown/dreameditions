@@ -1,11 +1,13 @@
 html,body{margin:0;padding:0;}
 * { margin:0; }
-body {background-color:#000; color: #666;font-family:Verdana, Arial;font-size:11px;line-height:14px;}
+body {background-color:#000; }
+body,td {color: #666;font-family:Verdana, Arial;font-size:11px;line-height:14px;width:100%;}
+td {text-align:center;vertical-align:middle;}
 a { color: #ccc; }
 a:hover {text-decoration:underline;}
 span {display: none;}
 h1, h2 {font-size:16px;font-weight:normal;color:#ccc;}
-#container { margin-left:auto; margin-right:auto; width:960px; padding-bottom:10px; text-align:center;}
+#container { margin:0 auto; width:960px; padding-bottom:10px; text-align:center;position:relative;}
 
 #header {width:960px;text-align:center;background:url(../images/bar.gif) no-repeat bottom center;}
   #header a.logo {background:url(../images/logo.gif); height:80px;width:340px;display:block;margin-left:auto;margin-right:auto;}
@@ -16,10 +18,11 @@ h1, h2 {font-size:16px;font-weight:normal;color:#ccc;}
   
 #content {height:499px;width:960px;text-align:center;background:url(../images/bottom_bar.gif) no-repeat bottom center;vertical-align:middle;display:table-cell;}
   #content p {padding-bottom:14px;}
-  body.home #content div.media_bin {float:left;margin:0;}
+  body.home #content div.media_bin {float:left;margin:0;width:710px;}
+  body.home #content div.preorder {width:250px;float:right;}
   body.about #content, body.contact #content, body.inquiries #content {padding:0 200px;}
+  #content table {height:498px;}
   body.about #content h1, body.contact #content h1, body.inquiries #content h1 {height:23px;margin-left:auto;margin-right:auto;margin-bottom:14px; width:580px;}
-
 #footer {margin-top:20px; clear:both;}
 
 
@@ -39,8 +42,11 @@ h1, h2 {font-size:16px;font-weight:normal;color:#ccc;}
   body.about #content h1 {background:url(../images/pg_about.gif) no-repeat;}
   body.inquiries #content h1 {background:url(../images/pg_inquiries.gif) no-repeat;}
 
-  body.identity #content {width:560px; vertical-align:top;text-align:left;padding:40px 80px;height:auto;}
-  body.identity #content #preview {float:left;}
+  body.identity #content {width:696px; vertical-align:top;text-align:left;padding:40px 80px;height:auto;}
+  body.identity #content #preview {float:left;width:296px;}
   body.identity #content #preview a {background:url(../images/preview.gif) no-repeat; display:block;margin:20px 0 0 90px;padding-left:20px;}
   body.identity #content #description {text-align:left;padding:0 0 0 346px; width:400px;}
   body.identity #preview-images {display:none;}
+  
+  
+  
